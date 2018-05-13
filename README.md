@@ -1,7 +1,5 @@
 # Vue-template
 
-# React-Mobx-Template
-
 * [Node.js](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com/en/)
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -23,6 +21,7 @@ this will open a new window in Chrome
 
 ## Debugging
 
-Pressing F5 in Visual Studio Code will give you an option to select an environment
-select Chrome this will generate a .vscode folder at the root of your directory
-Change `url` in to 3000 (default debugging port) for added debug support please download Vue.js devtools from the chrome store
+* Pressing F5 in Visual Studio Code will give you an option to select an environment
+* select Chrome this will generate a .vscode folder at the root of your directory
+* Change `url` in to 3000 (default debugging port)
+* for added debug support please download Vue.js devtools from the chrome store
