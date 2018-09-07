@@ -1,5 +1,5 @@
-import * as ExtractTextPlugin from 'extract-text-webpack-plugin';
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
+import * as MiniCSSExtractPlugin from 'mini-css-extract-plugin';
 import * as path from 'path';
 import * as webpack from 'webpack';
 import * as webpackMerge from 'webpack-merge';
@@ -19,8 +19,10 @@ const development: webpack.Configuration = webpackMerge(commonConfig, {
         publicPath: '/'
     },
     plugins: [
-        new ExtractTextPlugin('[name].css'),
         new webpack.HotModuleReplacementPlugin(),
+        new MiniCSSExtractPlugin({
+            filename: '[name].css'
+        }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'app', 'index.html')
         })
